@@ -1,0 +1,16 @@
+{
+  "name": "iiifimage-component",
+  "version": "1.0.0",
+  "description": "A React component for displaying an IIIF image.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "IIIF",
+    "react",
+    "react-component"
+  ],
+  "author": "Tom Kruijsen",
+  "license": "MIT"
+}
