@@ -4,7 +4,47 @@
   "description": "A React component for displaying an IIIF image.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "lint": "eslint **/*.jsx",
+    "test": "mocha --compilers jsx:babel-core/register"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "eslintConfig": {
+    "rules": {
+      "indent": [
+        2,
+        2
+      ],
+      "quotes": [
+        2,
+        "single"
+      ],
+      "linebreak-style": [
+        2,
+        "unix"
+      ],
+      "semi": [
+        2,
+        "always"
+      ],
+      "react/jsx-uses-react": 1
+    },
+    "env": {
+      "node": true,
+      "mocha": true,
+      "browser": true
+    },
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    },
+    "plugins": [
+      "react"
+    ]
   },
   "keywords": [
     "IIIF",
@@ -12,5 +52,16 @@
     "react-component"
   ],
   "author": "Tom Kruijsen",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.1.18",
+    "babel-core": "^6.1.21",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.4.1",
+    "eslint": "^1.9.0",
+    "eslint-plugin-react": "^3.8.0",
+    "mocha": "^2.3.3",
+    "react": "^0.14.2",
+    "react-addons-test-utils": "^0.14.2"
+  }
 }
