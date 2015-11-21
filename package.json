@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A React component for displaying an IIIF image.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomkr/react-iiif-image.git"
+  },
   "scripts": {
     "build": "babel src/iiif_image.jsx --out-file lib/iiif_image.js",
     "lint": "eslint **/*.jsx",
