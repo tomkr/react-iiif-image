@@ -5,7 +5,7 @@ A [React](http://facebook.github.io/react/) component for rendering an [IIIF](ht
 ## Installation
 
 ```sh
-$ npm install --save iiifimage-component
+$ npm install --save react-iiif-image
 ```
 
 ## Usage
