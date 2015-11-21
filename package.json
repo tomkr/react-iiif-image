@@ -1,9 +1,10 @@
 {
-  "name": "iiifimage-component",
+  "name": "react-iiif-image",
   "version": "1.0.0",
   "description": "A React component for displaying an IIIF image.",
   "main": "index.js",
   "scripts": {
+    "build": "babel src/iiif_image.jsx --out-file lib/iiif_image.js",
     "lint": "eslint **/*.jsx",
     "test": "mocha --compilers jsx:babel-core/register"
   },
@@ -55,6 +56,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel": "^6.1.18",
+    "babel-cli": "^6.1.18",
     "babel-core": "^6.1.21",
     "babel-preset-react": "^6.1.18",
     "chai": "^3.4.1",
